@@ -34,24 +34,10 @@ Key features include:
 
 ---
 
-## 📁 Simulation Code Structure
-
-The `src/` folder contains MATLAB scripts for the proposed control algorithm:
-
-- `src/generate_data.m` – Generates I/O data from the unknown LTI system
-- `src/improved_predictor.m` – Computes the improved subspace predictor
-- `src/compute_weights.m` – Defines weighting filters (Wr, Wd, Wu)
-- `src/solve_Hinf_control.m` – Solves the finite-horizon H∞ optimization problem
-- `src/run_simulation.m` – Full simulation pipeline for reference tracking and disturbance rejection
-
----
-
 ## 🛠 Requirements
 
-- MATLAB R2020a or newer
-- Control System Toolbox
-- Optimization Toolbox
-
+- MATLAB R2018b or newer
+- 
 ---
 
 ## 🛠 Usage
@@ -60,7 +46,7 @@ To run a simulation:
 
 1. Download or clone this repository
 2. Open MATLAB and navigate to one of the example directories
-3. Run `run_simulation.m` to start the simulation
+3. Run `main.m` to start the simulation
 4. Adjust reference/disturbance/weights in the script as needed
 5. Visual outputs include reference tracking and control effort plots
 
