@@ -11,7 +11,14 @@ This repository contains MATLAB code and simulation setups for our paper:
 
 ## 🧠 Abstract
 
-We propose a novel data-driven control scheme for achieving offset-free reference tracking in linear systems, even in the presence of disturbances. The method integrates an improved subspace predictor with H∞ control formulation and does not require explicit plant modeling. Key features include integral action via differentiated I/O data and weighting filters for reference tracking, disturbance rejection, and control effort shaping. Simulation results confirm the accuracy, robustness, and real-time feasibility of the proposed method.
+Data-driven controllers also called model-free controllers were invented in order to omit plant modeling step of model-based
+controllers. Design procedure of these controllers is directly based on experimental I/O data collected from real plant. It can
+ensure their reliability in real world applications, where the exact model is not available in most cases. In this paper, we
+consider the problem of accurate tracking performance in presence of external disturbances using data-driven methodologies
+combined with H∞ approach. Defining the improved subspace-based predictor, as the base step of the proposed controller’s
+design procedure, an integrator is applied to the control loop, which increases the accuracy of controller’s reference tracking
+performance. Moreover, a weighting function is considered for disturbance attenuation. Simulation results evidently illustrate
+efficiency and satisfactory performance of the proposed controller.
 
 ## 🎯 Overview
 
